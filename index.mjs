@@ -1,5 +1,14 @@
 import https from 'https';
 
+var server = https.createServer(function (request, response){
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.end("Hello World from expressjs in a Docker container.");
+});
+
+server.listen(8000);
+console.log("Server running at http://127.0.0.1:8000/");
+
+
 export const handler = async (event) => {
     let sessionId = null;
     if (typeof event.queryStringParameters !== 'undefined' && typeof event.queryStringParameters.sess !== 'undefined') {

@@ -39,7 +39,10 @@ RUN npm install --omit=dev
 # Copy local code to the container image.
 COPY . ./
 
+# Set environment variable for the listening port, as required by Cloud Run
+EXPOSE 8080
+
 # Run the web service on container startup.
-CMD [ "node", "index.js" ]
+CMD [ "node", "index.mjs" ]
 
 # [END cloudrun_helloworld_dockerfile]
