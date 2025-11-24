@@ -1,2 +1,2 @@
 # offerte-spesa-online
-Elenco delle offerte per la spesa online con il gruppo GROS, PIM, IperTriscount, Pewex e MA
+Elenco delle offerte per la spesa online con il gruppo GROS, PIM, IperTriscount, Pewex, MA, IperCarni, DEM, Basko, IdroMarket, Castoro, CTS, ...
